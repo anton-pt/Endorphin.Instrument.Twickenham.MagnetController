@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Parameters - Endorphin.Instrument.Twickenham.MagnetController</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="University of Warwick EPR and Diamond group"/>
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
+
+    <link type="text/css" rel="stylesheet" href="/Endorphin.Instrument.Twickenham.MagnetController/content/style.css" />
+    <script type="text/javascript" src="/Endorphin.Instrument.Twickenham.MagnetController/content/tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController">github page</a></li>
+        </ul>
+        <h3 class="muted"><a href="/Endorphin.Instrument.Twickenham.MagnetController/index.html">Endorphin.Instrument.Twickenham.MagnetController</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>Parameters</h1>
+<p>
+  <span>Namespace: Endorphin.Instrument.Twickenham.MagnetController</span><br />
+  <span>Parent Module: <a href="endorphin-instrument-twickenham-magnetcontroller-fieldsweep.html">FieldSweep</a></span>
+</p>
+<div class="xmldoc">
+<p>Functions for specifying magnetic field sweep parameters.</p>
+
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '10', 10)" onmouseover="showTip(event, '10', 10)">
+            create (...)
+          </code>
+          <div class="tip" id="10">
+            <strong>Signature:</strong> currentDirection:CurrentDirection -&gt; initialStepIndex:uint16 -&gt; finalStepIndex:uint16 -&gt; rampRateIndex:int -&gt; FieldSweepParameters<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L52-52" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Creates a magnetic field sweep</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '11', 11)" onmouseover="showTip(event, '11', 11)">
+            currentChange (...)
+          </code>
+          <div class="tip" id="11">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; parameters:FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;A,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L115-115" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the difference between initial and final output current in the magnetic field
+sweep defined by the sweep parameters on the given magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '12', 12)" onmouseover="showTip(event, '12', 12)">
+            currentDirection parameters
+          </code>
+          <div class="tip" id="12">
+            <strong>Signature:</strong> parameters:FieldSweepParameters -&gt; CurrentDirection<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L66-66" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the current direction of the magnetic field sweep parameters.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '13', 13)" onmouseover="showTip(event, '13', 13)">
+            duration magnetController parameters
+          </code>
+          <div class="tip" id="13">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; parameters:FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;s,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L163-163" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the estimated duration for the magnetic field sweep on the given magnet
+controller, not including preparation time.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '14', 14)" onmouseover="showTip(event, '14', 14)">
+            fieldChange magnetController parameters
+          </code>
+          <div class="tip" id="14">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; parameters:FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;T,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L121-121" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the difference between initial and final magnetic field in the sweep defined
+by the sweep parameters on the given magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '15', 15)" onmouseover="showTip(event, '15', 15)">
+            finalCurrent magnetController
+          </code>
+          <div class="tip" id="15">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;A,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L98-98" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the final output current corresponding to the magnetic field sweep parameters
+on the given magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '16', 16)" onmouseover="showTip(event, '16', 16)">
+            finalField magnetController parameters
+          </code>
+          <div class="tip" id="16">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; parameters:FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;T,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L92-92" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the final magnetic field corresponding to the magnetic field sweep parameters
+on the given magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '17', 17)" onmouseover="showTip(event, '17', 17)">
+            finalShuntVoltage magnetController
+          </code>
+          <div class="tip" id="17">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;V,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L103-103" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the final monitoring shunt voltage corresponding to the magnetic field sweep
+parameters on the given magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '18', 18)" onmouseover="showTip(event, '18', 18)">
+            finalStepIndex parameters
+          </code>
+          <div class="tip" id="18">
+            <strong>Signature:</strong> parameters:FieldSweepParameters -&gt; uint16<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L88-88" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the final digital output step index of the magnetic field sweep parameters.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '19', 19)" onmouseover="showTip(event, '19', 19)">
+            initialCurrent magnetController
+          </code>
+          <div class="tip" id="19">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;A,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L79-79" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the initial output current corresponding to the magnetic field sweep
+parameters on the given magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '20', 20)" onmouseover="showTip(event, '20', 20)">
+            initialField magnetController parameters
+          </code>
+          <div class="tip" id="20">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; parameters:FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;T,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L73-73" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the initial magnetic field corresponding to the magnetic field sweep
+parameters on the given magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '21', 21)" onmouseover="showTip(event, '21', 21)">
+            initialShuntVoltage magnetController
+          </code>
+          <div class="tip" id="21">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;V,MeasureOne&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L84-84" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the initial monitoring shunt voltage corresponding to the magnetic field
+sweep parameters on the given magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '22', 22)" onmouseover="showTip(event, '22', 22)">
+            initialStepIndex parameters
+          </code>
+          <div class="tip" id="22">
+            <strong>Signature:</strong> parameters:FieldSweepParameters -&gt; uint16<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L69-69" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the initial digital output step index of the magnetic field sweep parameters.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '23', 23)" onmouseover="showTip(event, '23', 23)">
+            numberOfSteps parameters
+          </code>
+          <div class="tip" id="23">
+            <strong>Signature:</strong> parameters:FieldSweepParameters -&gt; uint16<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L108-108" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the number of digital output steps in the magnetic field sweep defined by the
+given sweep parameters.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '24', 24)" onmouseover="showTip(event, '24', 24)">
+            rampRate magnetController
+          </code>
+          <div class="tip" id="24">
+            <strong>Signature:</strong> magnetController:MagnetController -&gt; FieldSweepParameters -&gt; decimal&lt;MeasureProduct&lt;MeasureInverse&lt;s&gt;,MeasureProduct&lt;A,MeasureOne&gt;&gt;&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L158-158" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the ramp rate used while ramping the magnet controller between the initial and
+final ramp targets for the sweep defined by the given parameters. Note that the
+maximum available ramp rate on the magnet controller is used while preparing the sweep.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '25', 25)" onmouseover="showTip(event, '25', 25)">
+            rampRateIndex target
+          </code>
+          <div class="tip" id="25">
+            <strong>Signature:</strong> target:FieldSweepParameters -&gt; int<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L153-153" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns the ramp rate index used while ramping the magnet controller between the
+initial and final ramp targets for the sweep defined by the given parameters. Note
+that the maximum available ramp rate on the magnet controller is used while preparing
+the sweep.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '26', 26)" onmouseover="showTip(event, '26', 26)">
+            withRampRate rampRateIndex parameters
+          </code>
+          <div class="tip" id="26">
+            <strong>Signature:</strong> rampRateIndex:int -&gt; parameters:FieldSweepParameters -&gt; FieldSweepParameters<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/FieldSweep.fs#L62-62" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Returns modified magnetic field sweep parameters with the specified ramp rate index.</p>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <img src="/Endorphin.Instrument.Twickenham.MagnetController/img/logo.png" alt="F# Project" style="width:150px;margin:10px" />  
+          <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
+            <li class="nav-header">Endorphin.Instrument.Twickenham.MagnetController</li>
+            <li><a href="/Endorphin.Instrument.Twickenham.MagnetController/index.html">Home page</a></li>
+            <li class="divider"></li>
+            <li><a href="http://nuget.org/packages/Endorphin.Instrument.Twickenham.MagnetController">Get Library via NuGet</a></li>
+            <li><a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController">Source Code on GitHub</a></li>
+            <li><a href="/Endorphin.Instrument.Twickenham.MagnetController/license.html">License</a></li>
+            <li><a href="/Endorphin.Instrument.Twickenham.MagnetController/release-notes.html">Release Notes</a></li>
+            
+            <li class="nav-header">Documentation</li>
+            <li><a href="/Endorphin.Instrument.Twickenham.MagnetController/reference/index.html">API Reference</a></li>
+			<li><a href="/Endorphin.Instrument.Twickenham.MagnetController/fieldtarget.html">Ramping to a target field</a></li>
+			<li><a href="/Endorphin.Instrument.Twickenham.MagnetController/fieldsweep.html">Performing a field sweep</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+  </body>
+  </html>
