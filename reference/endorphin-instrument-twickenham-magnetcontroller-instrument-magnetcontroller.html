@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>MagnetController - Endorphin.Instrument.Twickenham.MagnetController</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content="University of Warwick EPR and Diamond group"/>
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
+
+    <link type="text/css" rel="stylesheet" href="/Endorphin.Instrument.Twickenham.MagnetController/content/style.css" />
+    <script type="text/javascript" src="/Endorphin.Instrument.Twickenham.MagnetController/content/tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController">github page</a></li>
+        </ul>
+        <h3 class="muted"><a href="/Endorphin.Instrument.Twickenham.MagnetController/index.html">Endorphin.Instrument.Twickenham.MagnetController</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+
+
+<h1>MagnetController</h1>
+<p>
+  <span>Namespace: Endorphin.Instrument.Twickenham.MagnetController</span><br />
+  <span>Parent Module: <a href="endorphin-instrument-twickenham-magnetcontroller-instrument.html">Instrument</a></span>
+</p>
+<div class="xmldoc">
+<p>Functions posting comands and performing queries to a Twickenham Scientific superconducting
+magnet controller.</p>
+
+</div>
+
+<!-- Render nested types and modules, if there are any -->
+  <h2>Nested types and modules</h2>
+  <div>
+      <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="endorphin-instrument-twickenham-magnetcontroller-instrument-magnetcontroller-output.html">Output</a>
+          </td>
+          <td class="xmldoc"><p>Functions related to setting the magnet controller output.</p>
+
+</td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="endorphin-instrument-twickenham-magnetcontroller-instrument-magnetcontroller-ramp.html">Ramp</a>
+          </td>
+          <td class="xmldoc"><p>Functions related to controlling output ramping for the magnet controller.</p>
+
+</td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="endorphin-instrument-twickenham-magnetcontroller-instrument-magnetcontroller-settings.html">Settings</a>
+          </td>
+          <td class="xmldoc"><p>Functions related to the magnet controller settings.</p>
+
+</td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+  <h3>Functions and values</h3>
+  <table class="table table-bordered member-list">
+    <thead>
+      <tr><td>Function or value</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '42', 42)" onmouseover="showTip(event, '42', 42)">
+            closeInstrument(arg1)
+          </code>
+          <div class="tip" id="42">
+            <strong>Signature:</strong> MagnetController -&gt; Async&lt;unit&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/MagnetController.fs#L37-37" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Closes a connection to a Twickenham Scientific superconducting magnet controller.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '43', 43)" onmouseover="showTip(event, '43', 43)">
+            openInstrument(...)
+          </code>
+          <div class="tip" id="43">
+            <strong>Signature:</strong> visaAddress:string -&gt; timeout:int&lt;MeasureProduct&lt;ms,MeasureOne&gt;&gt; -&gt; settings:Settings -&gt; Async&lt;MagnetController&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/MagnetController.fs#L23-23" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Opens a connection to a Twickenham Scientific superconducting magnet controller with the
+specified VISA address and settings.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '44', 44)" onmouseover="showTip(event, '44', 44)">
+            queryCurrentParameters
+          </code>
+          <div class="tip" id="44">
+            <strong>Signature:</strong> MagnetController -&gt; Async&lt;CurrentParameters&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/MagnetController.fs#L46-46" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Queries the current parameters of the magnet controller, containing the ramp target and
+flags indicating whether the target has been reached and whether ramping is paused.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '45', 45)" onmouseover="showTip(event, '45', 45)">
+            queryOperatingParameters
+          </code>
+          <div class="tip" id="45">
+            <strong>Signature:</strong> MagnetController -&gt; Async&lt;OperatingParameters&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/MagnetController.fs#L50-50" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Queries the operating parameters of the magnet controller, containing the ramp rate and
+current direction.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '46', 46)" onmouseover="showTip(event, '46', 46)">
+            queryOutputParameters
+          </code>
+          <div class="tip" id="46">
+            <strong>Signature:</strong> MagnetController -&gt; Async&lt;OutputParameters&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/MagnetController.fs#L42-42" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Queries the output parameters of the magnet controller, containing the output current,
+voltage and ramp target.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '47', 47)" onmouseover="showTip(event, '47', 47)">
+            querySetPointParameters
+          </code>
+          <div class="tip" id="47">
+            <strong>Signature:</strong> MagnetController -&gt; Async&lt;SetPointParameters&gt;<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/MagnetController.fs#L54-54" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Queries the set-point parameters of the magnet controller, containing the lower and upper
+set points and the trip voltage.</p>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td class="member-name">
+
+          <code onmouseout="hideTip(event, '48', 48)" onmouseover="showTip(event, '48', 48)">
+            settings(arg1)
+          </code>
+          <div class="tip" id="48">
+            <strong>Signature:</strong> MagnetController -&gt; Settings<br />
+                      </div>
+        </td>
+        <td class="xmldoc">
+            <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController/tree/master/src/Endorphin.Instrument.Twickenham.MagnetController/MagnetController.fs#L19-19" class="github-link">
+              <img src="../content/img/github.png" class="normal" />
+              <img src="../content/img/github-blue.png" class="hover" />
+            </a>
+          <p>Gets the settings for the magnet controller.</p>
+
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+        </div>
+        <div class="span3">
+          <img src="/Endorphin.Instrument.Twickenham.MagnetController/img/logo.png" alt="F# Project" style="width:150px;margin:10px" />  
+          <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
+            <li class="nav-header">Endorphin.Instrument.Twickenham.MagnetController</li>
+            <li><a href="/Endorphin.Instrument.Twickenham.MagnetController/index.html">Home page</a></li>
+            <li class="divider"></li>
+            <li><a href="http://nuget.org/packages/Endorphin.Instrument.Twickenham.MagnetController">Get Library via NuGet</a></li>
+            <li><a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController">Source Code on GitHub</a></li>
+            <li><a href="/Endorphin.Instrument.Twickenham.MagnetController/license.html">License</a></li>
+            <li><a href="/Endorphin.Instrument.Twickenham.MagnetController/release-notes.html">Release Notes</a></li>
+            
+            <li class="nav-header">Documentation</li>
+            <li><a href="/Endorphin.Instrument.Twickenham.MagnetController/reference/index.html">API Reference</a></li>
+			<li><a href="/Endorphin.Instrument.Twickenham.MagnetController/fieldtarget.html">Ramping to a target field</a></li>
+			<li><a href="/Endorphin.Instrument.Twickenham.MagnetController/fieldsweep.html">Performing a field sweep</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="http://github.com/anton-pt/Endorphin.Instrument.Twickenham.MagnetController"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+  </body>
+  </html>
