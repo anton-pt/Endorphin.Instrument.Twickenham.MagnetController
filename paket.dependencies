@@ -1,7 +1,7 @@
 source https://nuget.org/api/v2
 
 nuget FSharp.Core redirects: force
-nuget Endorphin.Core.NationalInstruments ~> 0.9
+nuget Endorphin.Core.NationalInstruments ~> 0.9-beta
 nuget FSharp.Text.RegexProvider ~> 0.0.7
 nuget FSharp.Control.Reactive ~> 3.4.1
 
